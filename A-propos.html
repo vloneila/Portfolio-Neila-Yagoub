@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Neila Yagoub</title>
+    <style>
+        :root {
+            --primary-color: #ff4600;
+            --secondary-color: #ff4600;
+            --accent-color: #ff4600;
+            --text-color: #000000;
+            --light-bg: #000000;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--light-bg);
+            text-align: center;
+        }
+        
+        /* Header harmonisé avec la page Expériences */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+            background-color: var(--light-bg);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+            gap: 30px;
+        }
+        
+        h1, h2 {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            font-size: 100px;
+        }
+        
+        .about {
+            margin: 60px 0;
+        }
+        
+        .about img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .about img:hover {
+            transform: scale(1.02);
+        }
+        
+        .cv-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .cv-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .cv-card p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .cv-link {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .cv-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            
+            .about img {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Neila Yagoub</h1>
+        <nav>
+            <ul>
+                <li><a href="A-propos.html">À propos de moi</a></li>
+                <li><a href="Autres.html">Communication digitale</a></li>
+                <li><a href="Experiences.html">Expériences</a></li>
+                <li><a href="Photographie.html">Photographie</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="about">
+            <img src="Images/portfolio website.png" alt="Présentation de Neila Yagoub">
+        </section>
+
+        <section class="cv-card">
+            <p>Pour mieux comprendre mon univers professionnel et mes compétences, vous pouvez consulter mon CV.</p>
+            <p>Ce document synthétise mes formations, expériences professionnelles ainsi que mes engagements.</p>
+            <a href="Documents/CV.pdf" download class="cv-link">Télécharger mon CV</a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 - Portfolio Neila Yagoub</p>
+    </footer>
+</body>
+</html>

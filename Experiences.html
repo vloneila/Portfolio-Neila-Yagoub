@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences</title>
+    <link rel="stylesheet" href="Styles/Style.css">
+
+    <style>
+        :root {
+            --primary-color: #ff4600;
+            --secondary-color: #ff4600;
+            --accent-color: #ff4600;
+            --text-color: #000000;
+            --light-bg: #000000;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--light-bg);
+            text-align: left;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        
+        .experience-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .mission-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 15px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .skill {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            h3 {
+                flex-direction: column;
+            }
+            
+            h3 span {
+                color: #ff4600;
+                margin-top: 5px;
+            }
+        }
+        h1, h2{                 
+            color: #ff4600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expériences</h1>
+        <nav>
+            <ul>
+                <li><a href="A-propos.html">À propos de moi</a></li>
+                <li><a href="Autres.html">Communication digitale</a></li>
+                <li><a href="Experiences.html">Expériences</a></li>
+                <li><a href="Photographie.html">Photographie</a></li>
+
+            </ul>
+        </nav>
+    </header>
+        <p>Un parcours diversifié en communication, design et intelligence des données</p>
+    <section>
+        <h2>Stages</h2>
+        
+        <div class="experience-card">
+            <h3>Maison Ronald McDonald CHU Pellegrin <span>4 semaines (avril - mai 2023)</span></h3>
+            
+            <p>La Fondation Ronald McDonald est une organisation de bienfaisance enregistrée légalement reconnue comme une organisation à but non lucratif. Son nom est une référence au personnage fictif Ronald McDonald. La fondation compte plus de 350 maisons dans le monde dont 10 en France.</p>
+            
+            <p>Sa mission est de créer, de soutenir et de développer des programmes qui améliorent la santé et le bien-être des enfants; elle accueille les familles d'enfants malades pour qu'elles restent près des enfants hospitalisés.</p>
+            
+            <div class="mission-title">Missions :</div>
+            <ul>
+                <li>Création de visuels, graphismes et publications pour les réseaux sociaux (Instagram, Facebook)</li>
+                <li>Conception d'une affiche pour le magazine UBB mag</li>
+                <li>Début de conception d'un livret informatif pour les familles</li>
+                <li>Réalisation et montage d'une vidéo de présentation</li>
+                <li>Création de signalétique pour l'événement "Fête du Printemps"</li>
+            </ul>
+            
+            <div class="skills">
+                <span class="skill">Design graphique</span>
+                <span class="skill">Communication visuelle</span>
+                <span class="skill">Adobe Illustrator</span>
+                <span class="skill">Adobe InDesign</span>
+                <span class="skill">Gestion de contenu</span>
+            </div>
+        </div>
+        
+        <div class="experience-card">
+            <h3>Tressaf Hairstyle <span>7 semaines (avril - juin 2024)</span></h3>
+            
+            <p>Tressaf est une entreprise de produits cosmétiques capillaires pour les personnes aux cheveux texturés. La marque s'implante progressivement en France.</p>
+            
+            <div class="mission-title">Missions :</div>
+            <ul>
+                <li>Rédaction d'articles de blog pour alimenter le site web</li>
+                <li>Création de contenus pour les réseaux sociaux (Facebook, Instagram, LinkedIn)</li>
+                <li>Recherche d'information et veille concurrentielle</li>
+                <li>Développement de stratégies de communication</li>
+                <li>Promotion d'événements et construction de campagnes de communication</li>
+            </ul>
+            
+            <div class="skills">
+                <span class="skill">Content Management</span>
+                <span class="skill">Stratégie digitale</span>
+                <span class="skill">Community Management</span>
+                <span class="skill">Benchmark</span>
+                <span class="skill">Event Management</span>
+            </div>
+        </div>
+        
+        <div class="experience-card">
+            <h3>Le Bourgeon - Cabinet spécialisé dans le handicap invisible <span>8 semaines (avril - juin 2025)</span></h3>
+            
+            <p>Le cabinet Le Bourgeon est spécialisé dans le handicap invisible. Sa mission est d'aider au recrutement, à la réinsertion et au maintien à l'emploi des personnes en situation de handicap.</p>
+            
+            <div class="mission-title">Missions :</div>
+            <ul>
+                <li>Création de visuels, graphismes et publications pour LinkedIn</li>
+                <li>Participation à la conception de la fresque du handicap</li>
+                <li>Création de la charte graphique du cabinet</li>
+                <li>Redesign et mise à jour du site web</li>
+                <li>Amélioration de l'ergonomie et de l'accessibilité du site</li>
+            </ul>
+            
+            <div class="skills">
+                <span class="skill">Design graphique</span>
+                <span class="skill">Communication digitale</span>
+                <span class="skill">Accessibilité web</span>
+                <span class="skill">Identité visuelle</span>
+                <span class="skill">UX Design</span>
+            </div>
+        </div>
+        
+        <div class="experience-card">
+            <h3>Projet MatrioscIA <span>2 semaines (juin - juillet 2025)</span></h3>
+            
+            <p>Projet étudiant l'évolution des méthodes OSINT (renseignement en sources ouvertes) et leur interaction avec les technologies d'intelligence artificielle.</p>
+            
+            <div class="mission-title">Missions :</div>
+            <ul>
+                <li>Développement d'un lexique OSINT structuré</li>
+                <li>Établissement d'une liste de termes clés à documenter</li>
+                <li>Rédaction de fiches détaillées avec Zettlr</li>
+                <li>Intégration dans COSMA pour une visualisation interactive</li>
+                <li>Recherche documentaire et organisation des connaissances</li>
+            </ul>
+            
+            <div class="skills">
+                <span class="skill">OSINT</span>
+                <span class="skill">Intelligence Artificielle</span>
+                <span class="skill">Recherche documentaire</span>
+                <span class="skill">Gestion des connaissances</span>
+                <span class="skill">Visualisation de données</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

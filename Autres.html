@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication digitale</title>
+    <link rel="stylesheet" href="Styles/Style.css">
+    <style>
+        :root {
+            --primary-color: #ff4600;
+            --secondary-color: #ff4600;
+            --accent-color: #ff4600;
+            --text-color: #000000;
+            --light-bg: #000000;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--light-bg);
+            text-align: left;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        h1, h2 {                 
+            color: #ff4600;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 15px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .skill {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-images img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-images img:hover {
+            transform: scale(1.02);
+        }
+        
+        
+        
+        @media (max-width: 768px) {
+            .project-images {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Communication digitale</h1>
+        <nav>
+            <ul>
+                <li><a href="A-propos.html">À propos de moi</a></li>
+                <li><a href="Autres.html">Communication digitale</a></li>
+                <li><a href="Experiences.html">Expériences</a></li>
+                <li><a href="Photographie.html">Photographie</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="project-card">
+            <h2>CPPQC - Média sur la sexualité</h2>
+            <p>Dans le cadre de ce projet, j'ai conçu et géré du contenu sur Instagram en adoptant une approche éducative et inclusive. L'objectif était d'informer et de sensibiliser un large public à travers des visuels engageants, des infographies accessibles et des publications favorisant l'échange et la discussion.</p>
+            
+            <div class="project-title">Compétences mobilisées :</div>
+            <ul>
+                <li>Création de contenu éducatif</li>
+                <li>Gestion de communauté</li>
+                <li>Design d'infographies</li>
+                <li>Stratégie de contenu pour réseaux sociaux</li>
+            </ul>
+            
+            <div class="skills">
+                <span class="skill">Community Management</span>
+                <span class="skill">Design Graphique</span>
+                <span class="skill">Stratégie de contenu</span>
+                <span class="skill">Sensibilisation</span>
+            </div>
+            
+            <div class="project-images">
+                <img src="Images/cppqc cover.jpg" alt="Présentation CPPQC">
+                <img src="Images/cppqc post.jpg" alt="Post CPPQC">
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <h2>Tressaf Hairstyle - Cosmétiques naturels</h2>
+            <p>Avec Tressaf Hairstyle, une marque de cosmétiques naturels dédiée aux cheveux texturés, j'ai travaillé sur l'élaboration d'une ligne éditoriale cohérente et la production de visuels attractifs. Ce travail visait à mettre en avant les bienfaits des produits, valoriser la diversité capillaire et renforcer l'image de marque auprès d'une communauté engagée.</p>
+            
+            <div class="project-title">Compétences mobilisées :</div>
+            <ul>
+                <li>Développement de l'identité visuelle</li>
+                <li>Création de contenu produit</li>
+                <li>Stratégie de marque</li>
+                <li>Photographie produit</li>
+            </ul>
+            
+            <div class="skills">
+                <span class="skill">Branding</span>
+                <span class="skill">Content Creation</span>
+                <span class="skill">Marketing digital</span>
+                <span class="skill">Photographie</span>
+            </div>
+            
+            <div class="project-images">
+                <img src="Images/tressaf cover.jpg" alt="Présentation Tressaf">
+                <img src="Images/tressaf post.jpg" alt="Post Tressaf">
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <h2>BNDL - Application photo</h2>
+            <p>Dans le cadre d'un travail de groupe, j'ai conçu le prototype de BNDL, une application facilitant la collecte, le partage et l'impression de photos. Ce projet a nécessité une réflexion approfondie sur l'ergonomie et l'expérience utilisateur afin de proposer une interface intuitive et fluide, répondant aux besoins des utilisateurs en matière de gestion de souvenirs numériques.</p>
+            
+            <div class="project-title">Compétences mobilisées :</div>
+            <ul>
+                <li>Design d'interface</li>
+                <li>Prototypage</li>
+                <li>UX Design</li>
+                <li>Travail collaboratif</li>
+            </ul>
+            
+            <div class="skills">
+                <span class="skill">UI/UX Design</span>
+                <span class="skill">Figma</span>
+                <span class="skill">Prototypage</span>
+                <span class="skill">Design Thinking</span>
+            </div>
+            
+            <div class="project-images">
+                <img src="Images/bndl cover.jpg" alt="Présentation BNDL">
+            </div>
+        </div>
+    </main>
+    
+   
+</body>
+</html>
