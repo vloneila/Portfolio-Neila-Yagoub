@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
+    <title>Photographie</title>
    
    
    
 </head>
 <body>
+    
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');    
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-        }
+    
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    }
    
        
-        h1 {
+h1 {
     text-transform: uppercase;
     color: #ff4600;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -35,13 +37,25 @@ h2 {
 
 header {
     text-align: center;
-            margin-bottom: px;
-            margin-top: 35px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 40px;
+    margin-top: 55px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--light-bg);
+    width: 63%; /* Prend 80% de la largeur disponible */
+    margin: 55px auto 40px auto; /* Centre et garde la marge en bas */
 }
 
 
+
+:root {
+            --primary-color: #ff4600;
+            --secondary-color: #ff4600;
+            --accent-color: #ff4600;
+            --text-color: #000000;
+            --light-bg: #000000;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
 
 body {
@@ -49,34 +63,17 @@ body {
     padding: 0;
 }
 
-
-
-
-
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 545;
+    font-weight: bolder;
 }
 
 
-nav ul li a:hover {
-    color: #ff4600;
-}    
 
-nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 30px 0 0;
-            gap: 30px;
-        }
-        
 nav a {
-         color: #ffffff;
+            color: #ffffff;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 500; 
             padding: 5px 10px;
             transition: all 0.3s ease;
             position: relative;
@@ -87,19 +84,30 @@ nav a:hover {
         }
         
 nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--primary-color);
-            transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
         }
         
 nav a:hover::after {
-            width: 100%;
-        }
+    width: 100%;
+    }
+        
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    gap: 30px;
+    }
+
+    
 .halloween-carousel-container {
             position: relative;
             max-width: 600px;
@@ -161,7 +169,7 @@ nav a:hover::after {
     <h1>Photographie</h1>
     <nav>
         <ul>
-            <li><a href="index.html">À propos de moi</a></li>
+            <li><a href="index.html.html">À propos de moi</a></li>
             <li><a href="Autres.html">Communication digitale</a></li>
             <li><a href="Experiences.html">Expériences</a></li>
             <li><a href="Photographie.html">Photographie</a></li>
@@ -207,7 +215,7 @@ nav a:hover::after {
 </head>
 <body>
     <header>
-        <h1>Galerie de mes réalisations</h1>
+        <h2>Galerie de mes réalisations</h2>
     </header>
     <main>
         <section class="gallery">
@@ -215,10 +223,10 @@ nav a:hover::after {
             <img src="Images/1.2.jpg" alt="Love">
             <img src="Images/1.3.jpg" alt="Love">
             <img src="Images/1.4.jpg" alt="Love">
-            <img src="Images/2.1.JPG" alt="Catfish">
-            <img src="Images/2.2.JPG" alt="Catfish">
-            <img src="Images/2.3.JPG" alt="Catfish">
-            <img src="Images/2.4.JPG" alt="Catfish">
+            <img src="Images/2.1.jpg" alt="Catfish">
+            <img src="Images/2.2.jpg" alt="Catfish">
+            <img src="Images/2.3.jpg" alt="Catfish">
+            <img src="Images/2.4.jpg" alt="Catfish">
             <img src="Images/biais.JPG" alt="biais">
             <img src="Images/face.JPG" alt="face">
             <img src="Images/highkey.JPG" alt="highkey">
@@ -263,14 +271,8 @@ nav a:hover::after {
                 track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
             }
            
-            // Défilement automatique
-            setInterval(() => {
-                nextSlide();
-            }, 3000);
         </script>
     </main>
-    <footer>
-        <p>&copy; 2025 - Portfolio Neila Yagoub</p>
-    </footer>
+
 </body>
 </html>
